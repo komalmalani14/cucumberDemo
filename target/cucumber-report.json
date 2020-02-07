@@ -1,0 +1,118 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-02-07T08:55:17.546Z",
+        "line": 39,
+        "name": "Demo Webshop Registration",
+        "description": "",
+        "id": "pixel-store;demo-webshop-registration",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14547118400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Demo Webshop Registration is opened",
+            "match": {
+              "location": "StepDefine.demo_Webshop_Registration_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5183563800,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user enters details",
+            "match": {
+              "location": "StepDefine.user_enters_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Lina",
+                  "AzMa",
+                  "lina.azma@xyz.com",
+                  "LinaAzMa",
+                  "LinaAzMa"
+                ]
+              },
+              {
+                "cells": [
+                  "Mina",
+                  "KzMa",
+                  "Mina.kzma@xyz.com",
+                  "MinaKzMa",
+                  "MinaKzMa"
+                ]
+              },
+              {
+                "cells": [
+                  "Zina",
+                  "MzMa",
+                  "Zina.Mzma@xyz.com",
+                  "ZinaMzMa",
+                  "ZinaMzMa"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78043200,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user clicks on Registration",
+            "match": {
+              "location": "StepDefine.user_clicks_on_Registration()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47200,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User gets Regitration Completed message",
+            "match": {
+              "location": "StepDefine.user_gets_Regitration_Completed_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22500,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Registration is successful",
+            "match": {
+              "location": "StepDefine.registration_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression2"
+          }
+        ]
+      }
+    ],
+    "name": "Pixel Store",
+    "description": "",
+    "id": "pixel-store",
+    "keyword": "Feature",
+    "uri": "file:cucumberfile.feature",
+    "tags": []
+  }
+]
