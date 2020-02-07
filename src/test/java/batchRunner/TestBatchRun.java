@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber .class)
 @CucumberOptions(features="cucumberfile.feature",glue="cucumberstepdef",
-tags= {"@Regression2"},plugin="json:target/cucumber-report.json")
+tags= {"@Regression"},plugin="json:target/cucumber-report.json")
 public class TestBatchRun {
 
 }

@@ -1,5 +1,6 @@
 package cucumberstepdef;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
@@ -20,10 +21,7 @@ public class StepDefine {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
 		System.out.println("Application is opened");
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\komal.malani\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("https://www.google.co.in/");
-		System.out.println(driver.getTitle());
+	
 	}
 	
 	@Given("user is at registration page")
@@ -81,9 +79,14 @@ public class StepDefine {
 	   // throw new io.cucumber.java.PendingException();
 		System.out.println("ID is "+string);
 		
-		//assertEquals("abc","abc");
+		//assertEquals(,"abc");
 		
 		//driver.findElement(By.id("gb_70")).click();
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\komal.malani\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.google.co.in/");
+		//System.out.println(driver.getTitle());
+		assertEquals("Google123",driver.getTitle());
 	}
 
 	@Then("System should accept her ID")

@@ -1,7 +1,7 @@
 Feature: Pixel Store
 
- #Background: 
-  #  Given App is opened
+ Background: 
+  Given App is opened
 
   @Regression @Smoke
   Scenario: User login
