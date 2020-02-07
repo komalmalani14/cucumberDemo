@@ -46,4 +46,4 @@ Feature: Pixel Store
   And User gets Regitration Completed message
   Then Registration is successful
     
-   #dsd
+   #dsdadabd
