@@ -3,107 +3,72 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-02-07T08:55:17.546Z",
-        "line": 39,
-        "name": "Demo Webshop Registration",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "pixel-store;demo-webshop-registration",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3353800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "App is opened",
+            "match": {
+              "location": "StepDefine.app_is_opened()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-24T12:05:05.687Z",
+        "line": 7,
+        "name": "User login",
+        "description": "",
+        "id": "pixel-store;user-login",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 14547118400,
+              "duration": 7970467000,
               "status": "passed"
             },
-            "line": 40,
-            "name": "Demo Webshop Registration is opened",
+            "line": 8,
+            "name": "Executive enter their userid as \"Alice9999\"",
             "match": {
-              "location": "StepDefine.demo_Webshop_Registration_is_opened()"
+              "arguments": [
+                {
+                  "val": "\"Alice9999\"",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefine.executive_enter_their_userid_as(String)"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5183563800,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "user enters details",
-            "match": {
-              "location": "StepDefine.user_enters_details(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Lina",
-                  "AzMa",
-                  "lina.azma@xyz.com",
-                  "LinaAzMa",
-                  "LinaAzMa"
-                ]
-              },
-              {
-                "cells": [
-                  "Mina",
-                  "KzMa",
-                  "Mina.kzma@xyz.com",
-                  "MinaKzMa",
-                  "MinaKzMa"
-                ]
-              },
-              {
-                "cells": [
-                  "Zina",
-                  "MzMa",
-                  "Zina.Mzma@xyz.com",
-                  "ZinaMzMa",
-                  "ZinaMzMa"
-                ]
-              }
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 78043200,
+              "duration": 114400,
               "status": "passed"
             },
-            "line": 45,
-            "name": "user clicks on Registration",
+            "line": 9,
+            "name": "System should accept her ID",
             "match": {
-              "location": "StepDefine.user_clicks_on_Registration()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 47200,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "User gets Regitration Completed message",
-            "match": {
-              "location": "StepDefine.user_gets_Regitration_Completed_message()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 22500,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "Registration is successful",
-            "match": {
-              "location": "StepDefine.registration_is_successful()"
+              "location": "StepDefine.system_should_accept_her_ID()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Regression2"
+            "name": "@Regression"
+          },
+          {
+            "name": "@Smoke"
           }
         ]
       }

@@ -80,13 +80,15 @@ public class StepDefine {
 		System.out.println("ID is "+string);
 		
 		//assertEquals(,"abc");
-		
+		String path = System.getProperty("user.dir");
+		System.out.println(path); 
 		//driver.findElement(By.id("gb_70")).click();
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\komal.malani\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",path+"\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.google.co.in/");
+		System.out.println(driver.getTitle());
 		//System.out.println(driver.getTitle());
-		assertEquals("Google123",driver.getTitle());
+		assertEquals("Google",driver.getTitle());
 	}
 
 	@Then("System should accept her ID")
